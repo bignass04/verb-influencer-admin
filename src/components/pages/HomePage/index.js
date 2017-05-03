@@ -1,13 +1,9 @@
 import React from 'react'
 
-import { PageTemplate, Header, Hero, Footer, FeatureList } from 'components'
+import { PageTemplate, LeftNav } from 'components'
 
-const HomePage = () => {
-  return (
-    <PageTemplate header={<Header />} hero={<Hero />} footer={<Footer />}>
-      <FeatureList />
-    </PageTemplate>
-  )
-}
+const HomePage = () => (
+  <PageTemplate leftNav={<LeftNav />}>Hello World</PageTemplate>
+)
 
 export default HomePage

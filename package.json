@@ -80,8 +80,6 @@
     "history": "3.0.0",
     "json-loader": "^0.5.4",
     "lodash": "^4.17.4",
-    "mongoose": "^4.7.6",
-    "mongoose-keywords": "^0.3.2",
     "morgan": "^1.7.0",
     "normalizr": "^3.0.1",
     "progress-bar-webpack-plugin": "^1.9.3",

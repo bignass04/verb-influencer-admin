@@ -1,50 +1,30 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
   display: flex;
-  flex-direction: column;
-  padding-top: 3.75rem;
-  min-height: 100vh;
-  box-sizing: border-box;
-`
-
-const Header = styled.header`
-  position: fixed;
-  top: 0;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  z-index: 999;
+  height: 100%;
 `
 
-const Hero = styled.section``
-
-const Content = styled.section`
-  width: 100%;
-  box-sizing: border-box;
-  margin: 2rem auto;
-  max-width: 920px;
+const LeftNav = styled.nav`
+  background-color: #202636;
+  padding: 0 20px;
+  width: 33.3%;
 `
 
-const Footer = styled.footer`
-  margin-top: auto;
+const Content = styled.div`
+  background-color: white;
+  width: 66.7%;
 `
 
-const PageTemplate = ({ header, hero, children, footer, ...props }) => {
-  return (
-    <Wrapper {...props}>
-      <Header>{header}</Header>
-      {hero && <Hero>{hero}</Hero>}
-      <Content>{children}</Content>
-      <Footer>{footer}</Footer>
-    </Wrapper>
-  )
-}
-
-PageTemplate.propTypes = {
-  header: PropTypes.node.isRequired,
-  hero: PropTypes.node,
-  footer: PropTypes.node.isRequired,
-  children: PropTypes.any.isRequired,
-}
+const PageTemplate = ({ leftNav, children, props }) => (
+  <Wrapper {...props}>
+    <LeftNav>{leftNav}</LeftNav>
+    <Content>{children}</Content>
+  </Wrapper>
+)
 
 export default PageTemplate
