@@ -1,13 +1,25 @@
 import React from 'react'
 import styled from 'styled-components'
-
-// import { Logo } from 'components'
+import { NavLink } from 'components'
+import { Logo } from 'components'
 
 const Wrapper = styled.div``
 
-const LeftNav = props => (
-  <Wrapper {...props}>
-    Test
+const LeftNav = () => (
+  <Wrapper>
+    <Logo />
+    <NavLink to='/companies'>
+      Companies
+    </NavLink>
+    <NavLink to='/campaigns'>
+      Campaigns
+    </NavLink>
+    <NavLink to='/influencers'>
+      Influencers
+    </NavLink>
+    <NavLink to='/employees'>
+      Employees
+    </NavLink>
   </Wrapper>
 )
 

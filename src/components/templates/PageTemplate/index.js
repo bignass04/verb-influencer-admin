@@ -10,8 +10,6 @@ const Wrapper = styled.div`
 `
 
 const LeftNav = styled.nav`
-  background-color: #202636;
-  padding: 0 20px;
   width: 33.3%;
 `
 
