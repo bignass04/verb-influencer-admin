@@ -5,8 +5,27 @@ import Helmet from 'react-helmet'
 import theme from './themes/default'
 
 injectGlobal`
-  body {
+  * {
     margin: 0;
+    padding: 0;
+  }
+
+  html {
+    height: 100%;
+  }
+
+  body {
+    font-family: ${theme.fonts.primary};
+    margin: 0;
+    height: inherit;
+  }
+
+  main {
+    height: inherit;
+  }
+
+  div[data-reactroot] {
+    height: inherit;
   }
 `
 

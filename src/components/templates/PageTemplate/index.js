@@ -6,16 +6,19 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%;
+  height: inherit;
 `
 
 const LeftNav = styled.nav`
   width: 33.3%;
+  height: inherit;
+  background-color: #202636;
 `
 
 const Content = styled.div`
   background-color: white;
   width: 66.7%;
+  height: inherit;
 `
 
 const PageTemplate = ({ leftNav, children, props }) => (
