@@ -20,6 +20,9 @@ const App = ({ children }) => {
           { name: 'description', content: 'Web Admin for Verb Influencers' },
           { name: 'robots', content: 'nonindex, nofollow' }
         ]}
+        link={[
+          { rel: 'stylesheet', type: 'text/css', href: '/local-fonts.css'}
+        ]}
       />
       <ThemeProvider theme={theme}>{ children }</ThemeProvider>
     </div>
@@ -27,7 +30,7 @@ const App = ({ children }) => {
 }
 
 App.propTypes = {
-  children: PropTypes.any,
+  children: PropTypes.any
 }
 
 export default App

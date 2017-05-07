@@ -6,10 +6,9 @@ const StyledLink = styled(Link)`
   display: block;
   color: #fff;
   text-decoration: none;
-  font-family: OpenSans;
   font-size: 15px;
   background-color: #202636;
-  padding: 30px 20px;
+  padding: 15px 20px;
   cursor: pointer;
 
   &:hover {
