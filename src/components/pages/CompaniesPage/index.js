@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { PageTemplate, LeftNav, Logo, CompaniesList, Button } from 'components'
 
 const HeadWrapper = styled.div`
-  padding: 20px 20px 0;
+  padding: 20px 20px 10px;
   background-color: #f0f2f5;
 `
 

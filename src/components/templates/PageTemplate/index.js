@@ -10,14 +10,14 @@ const Wrapper = styled.div`
 `
 
 const LeftNav = styled.nav`
-  width: 33.3%;
+  width: 500px;
   height: inherit;
   background-color: #202636;
 `
 
 const Content = styled.div`
   background-color: white;
-  width: 66.7%;
+  width: auto;
   height: inherit;
 `
 

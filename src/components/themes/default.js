@@ -1,6 +1,23 @@
 import { reversePalette } from 'styled-theme/composer'
 
-const theme = {}
+const theme = {
+  flexboxgrid: {
+    // Defaults
+    gutterWidth: 1, // rem
+    outerMargin: 2, // rem
+    container: {
+      sm: 46, // rem
+      md: 61, // rem
+      lg: 76  // rem
+    },
+    breakpoints: {
+      xs: 0,  // em
+      sm: 48, // em
+      md: 64, // em
+      lg: 75  // em
+    }
+  }
+}
 
 theme.palette = {
   primary: ['#1976d2', '#2196f3', '#71bcf7', '#c2e2fb'],
