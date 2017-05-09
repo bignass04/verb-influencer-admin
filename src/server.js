@@ -14,19 +14,11 @@ import * as firebase from "firebase"
 import api from 'api'
 import routes from 'routes'
 import configureStore from 'store/configure'
-import { env, port, ip, mongo, basename, apiKey, projectId } from 'config'
+import { env, port, ip, mongo, basename } from 'config'
 // import { setCsrfToken } from 'store/actions'
 import Html from 'components/Html'
 
 const router = new Router()
-
-// Initialize firebase connection
-firebase.initializeApp({
-  apiKey,
-  authDomain: `${projectId}.firebaseapp.com`,
-  databaseURL: `https://${projectId}.firebaseio.com`,
-  storageBucket: `gs://${projectId}.appspot.com`
-})
 
 // Allow the frontend to communicate with the Express server
 router.use('/api', cors(), api)
