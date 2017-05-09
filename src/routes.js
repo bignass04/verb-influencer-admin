@@ -7,6 +7,7 @@ import { CompaniesPage, CampaignsPage } from 'components'
 const routes = (
   <Route path="/" component={App}>
     <IndexRoute component={CompaniesPage} />
+    <Route path="/companies" component={CompaniesPage} />
     <Route path="/campaigns" component={CampaignsPage} />
   </Route>
 )

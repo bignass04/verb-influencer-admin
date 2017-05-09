@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Grid, Row, Col } from 'react-styled-flexboxgrid'
+import { MoreButton } from 'components'
 
 const TitleRow = styled(Row)`
   padding: 5px 30px;
@@ -39,24 +40,28 @@ const CompaniesList = () => {
     <StyledGrid>
       <TitleRow>
         <TitleCol lg={1}></TitleCol>
-        <TitleCol lg={3}>Name</TitleCol>
-        <TitleCol lg={3}>Active Campaigns</TitleCol>
-        <TitleCol lg={3}>Finished Campaigns</TitleCol>
+        <TitleCol lg={4}>Name</TitleCol>
+        <TitleCol lg={2}>Active Campaigns</TitleCol>
+        <TitleCol lg={2}>Finished Campaigns</TitleCol>
         <TitleCol lg={2}></TitleCol>
       </TitleRow>
       <StyledRow>
         <StyledCol lg={1}><img src='/icon.png' width='30' height='30' /></StyledCol>
-        <StyledCol lg={3}>Ben & Jerry's</StyledCol>
-        <StyledCol lg={3}>2</StyledCol>
-        <StyledCol lg={3}>3</StyledCol>
-        <StyledCol lg={2}></StyledCol>
+        <StyledCol lg={4}>Ben & Jerry's</StyledCol>
+        <StyledCol lg={2}>2</StyledCol>
+        <StyledCol lg={2}>3</StyledCol>
+        <StyledCol lg={2}>
+          <MoreButton action='more' clear>More</MoreButton>
+        </StyledCol>
       </StyledRow>
       <StyledRow>
         <StyledCol lg={1}><img src='/group.png' width='30' height='30' /></StyledCol>
-        <StyledCol lg={3}>Dragonball Z</StyledCol>
-        <StyledCol lg={3}>4</StyledCol>
-        <StyledCol lg={3}>1</StyledCol>
-        <StyledCol lg={2}></StyledCol>
+        <StyledCol lg={4}>Dragonball Z</StyledCol>
+        <StyledCol lg={2}>4</StyledCol>
+        <StyledCol lg={2}>1</StyledCol>
+        <StyledCol lg={2}>
+          <MoreButton action='more' clear>More</MoreButton>
+        </StyledCol>
       </StyledRow>
     </StyledGrid>
   )

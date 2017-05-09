@@ -8,6 +8,8 @@ const styles = css`
   font-family: ${font('primary')};
   align-items: center;
   font-size: 13px;
+  background-image: linear-gradient(to right, #410096, #8f01ff);
+  background: ${ifProp('clear', 'none')};
   border: #9637f9 solid 1.5px;
   border-radius: 58px;
   height: 3.2em;
@@ -18,7 +20,7 @@ const styles = css`
   padding: 0 1em;
   box-sizing: border-box;
   pointer-events: ${ifProp('disabled', 'none', 'auto')};
-  color: #11295e;
+  color: ${ifProp('clear', '#11295e', '#fff')};
 
   &:focus {
     outline: none
